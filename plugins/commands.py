@@ -75,6 +75,7 @@ async def start(client, message):
 
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
+            disable_web_page_preview=True
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
